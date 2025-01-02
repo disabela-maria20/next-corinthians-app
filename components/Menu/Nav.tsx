@@ -5,6 +5,8 @@ import { IoClose } from 'react-icons/io5'
 
 import Style from './Menu.module.scss'
 
+import Button from '../Button'
+
 interface NavProps {
   open: boolean
   setOpen?: (value: boolean) => void
@@ -35,10 +37,12 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
             <Link href={''}>FAC</Link>
           </li>
           <li>
-            <Link href={''}>quero me eternizar</Link>
+            <Button link>quero me eternizar</Button>
           </li>
           <li>
-            <Link href={''}>Quero saber mais</Link>
+            <Button link bgColor>
+              Quero saber mais
+            </Button>
           </li>
         </ul>
       </div>

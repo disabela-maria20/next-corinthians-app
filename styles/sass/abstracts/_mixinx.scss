@@ -1,5 +1,12 @@
 @use "variables" as variable;
-
+$valor_gap: 2, 4, 8, 10, 16, 22, 24, 32, 46, 58, 64, 72, 92, 124;
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 @mixin media($breakpoint) {
   @if $breakpoint =="xs" {
     @media (min-width: map-get(variable.$grid-breakpoints, xs)) {
@@ -72,3 +79,36 @@
   @include container();
 }
 
+.grid {
+  display: grid;
+}
+
+@for $i from 1 through 12 {
+  $columns: 1 * $i;
+
+  .grid-#{$i} {
+    grid-template-columns: repeat(#{$i}, 1fr);
+  }
+
+  @each $breakpoint, $value in $grid-breakpoints {
+    @include media($breakpoint) {
+      .grid-#{$i}-#{$breakpoint} {
+        grid-template-columns: repeat(#{$i}, 1fr);
+      }
+    }
+  }
+}
+
+@each $size in $valor_gap {
+  .gap-#{$size} {
+    gap: #{$size}px;
+  }
+
+  @each $breakpoint, $value in $grid-breakpoints {
+    @include media($breakpoint) {
+      .gap-#{$size}-#{$breakpoint} {
+        gap: #{$size}px;
+      }
+    }
+  }
+}

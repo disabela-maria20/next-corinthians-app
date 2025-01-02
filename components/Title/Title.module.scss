@@ -1,0 +1,20 @@
+.tag{
+  padding: 35px 0;
+  @include media(lg){
+    padding: 60px 0;
+  }
+
+   img{
+    width: 50px !important;
+    height: 50px!important;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+   }
+}
+
+.tagStyle{
+  color: $primary-colors;
+  font-size: 3.2rem;
+  text-align: center;
+}

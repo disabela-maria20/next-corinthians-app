@@ -1,0 +1,23 @@
+.btnStyle{
+    background-color: transparent;
+    border: 1px solid $primary-colors;
+    font-weight: 700 !important;
+    color: $primary-colors !important;
+    padding:  10px 25px !important;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 3px !important ;
+    cursor: pointer;
+    transition: all 400ms ease-in;
+
+    &.active{
+        background-color: $primary-colors;
+        color: $primary-dark-color !important;
+    }
+    &:hover{
+        background-color: $primary-colors;
+        color: $primary-dark-color !important;
+    }
+
+}
