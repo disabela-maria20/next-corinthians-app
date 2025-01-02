@@ -67,6 +67,7 @@
     @include media(lg) {
       font-size: 1.8rem;
       line-height: 2.9rem;
+      padding: 45px;
     }
   }
 
@@ -82,27 +83,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 35px;
-    transition: all 0.3s ease-in;
+    transition: all 0.3s;
+
     h3 {
-      font-size: 1.8rem;
-      line-height: 2.9rem;
+      font-size: 2.4rem;
+      line-height: 3.5rem;
       text-align: center;
       padding: 10px 0;
+      text-transform: uppercase;
       @include media(lg) {
-        font-size: 2.4rem;
-        line-height: 3.5rem;
+        font-size: 3.4rem;
+        line-height: 4.5rem;
       }
     }
     p {
-      display: none;
+      overflow: hidden;
+      max-height: 0;
+      transform: translateY(1em);
+      transition: all 0.55s ease;
       font-size: 1.4rem;
       line-height: 2.3rem;
       text-align: center;
-      padding: 10px 0;
-      transform: translateY(40px);
-      transition: 0.5s;
-      opacity: 0;
-    
+      color: $primary-dark-color;
     }
     .divisor {
       width: 100%;
@@ -122,11 +124,22 @@
       background-color: $primary-dark-color;
     }
     p {
-      display: block;
-     
-      transform: translateY(0px);
-      opacity: 1;
-     
+      max-height: 10em;
+      transform: none;
+      padding: 10px 0;
+      @include media(lg) {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+      }
     }
+  }
+}
+
+.areaButton {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+  @include media(lg) {
+    padding: 90px 0;
   }
 }

@@ -5,12 +5,16 @@ import { useState } from 'react'
 
 import Style from './Home.module.scss'
 
-import { Menu, Range, Title } from '@/components'
+import { Button, Menu, Range, Slide, Title } from '@/components'
 
 const Home = () => {
   const [open, setOpen] = useState<boolean>(true)
 
-  const vantagens = [
+  const vantagens: {
+    id: number
+    titulo: string
+    descricao: string
+  }[] = [
     {
       id: 0,
       titulo: 'Vantagem 1',
@@ -115,7 +119,11 @@ const Home = () => {
               </div>
             ))}
           </div>
+          <div className={Style.areaButton}>
+            <Button link>Quero garantir o meu</Button>
+          </div>
         </div>
+        <Slide></Slide>
       </section>
     </>
   )

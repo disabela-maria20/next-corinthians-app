@@ -1,0 +1,23 @@
+.slide {
+
+  .swiper-wrapper{
+    align-items: center;
+  }
+  .swiper-slide-active {
+    img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .swiper-slide-visible:not(.swiper-slide-active){
+    transform: none !important;
+    img {
+      opacity: 0.5;
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
