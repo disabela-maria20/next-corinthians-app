@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { IoClose } from 'react-icons/io5'
 
 import Style from './Menu.module.scss'
@@ -23,6 +24,21 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
         <ul>
           <li className={Style.NomeMenu}>
             <span>Menu</span>
+          </li>
+          <li>
+            <Link href={''}>como funciona?</Link>
+          </li>
+          <li>
+            <Link href={''}>quais são as vantagens</Link>
+          </li>
+          <li>
+            <Link href={''}>FAC</Link>
+          </li>
+          <li>
+            <Link href={''}>quero me eternizar</Link>
+          </li>
+          <li>
+            <Link href={''}>Quero saber mais</Link>
           </li>
         </ul>
       </div>
