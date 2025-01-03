@@ -1,11 +1,15 @@
 .slide {
+  padding-bottom: 35px !important;
 
+  @include media(lg) {
+    padding-bottom: 90px !important;
+  }
   .swiper-wrapper{
     align-items: center;
   }
   .swiper-slide-active {
     img {
-      height: 350px;
+      height: 450px;
       width: 100%;
       object-fit: cover;
     }
@@ -15,7 +19,7 @@
     transform: none !important;
     img {
       opacity: 0.5;
-      height: 250px;
+      height: 350px;
       width: 100%;
       object-fit: cover;
     }

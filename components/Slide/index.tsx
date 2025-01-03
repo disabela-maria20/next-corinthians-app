@@ -1,4 +1,7 @@
 /* eslint-disable prettier/prettier */
+// import { BsFillPlayBtnFill } from "react-icons/bs";
+// import { TbPhotoFilled } from "react-icons/tb";
+
 import {
   Autoplay,
   Navigation,
@@ -6,10 +9,9 @@ import {
   Pagination
 } from 'swiper/modules'
 
-import './style.scss'
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+import './style.scss'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
@@ -89,10 +91,15 @@ const Slide: React.FC = () => {
       {item.map((item) => (
         <SwiperSlide key={item.id}>
           <img src={item.src} alt={item.alt} />
-          <div>
-            <button>abrir</button>
-            <button>video</button>
-          </div>
+          {/* <div>
+            <button aria-label='foto'>
+            <TbPhotoFilled />
+
+            </button>
+            <button aria-label='play' >
+              <BsFillPlayBtnFill/>
+            </button>
+          </div> */}
         </SwiperSlide>
       ))}
     </Swiper>
