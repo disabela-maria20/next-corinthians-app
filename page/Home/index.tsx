@@ -2,13 +2,19 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import { BsDash, BsPlus } from 'react-icons/bs'
 
 import Style from './Home.module.scss'
 
-import { Button, Menu, Range, Slide, Title } from '@/components'
+import { Button, Footer, Menu, Range, Slide, Title } from '@/components'
 
 const Home = () => {
   const [open, setOpen] = useState<boolean>(true)
+  const [openItemId, setOpenItemId] = useState<number | null>(null)
+
+  const toggleCollapse = (id: number) => {
+    setOpenItemId((prevId) => (prevId === id ? null : id))
+  }
 
   const vantagens: {
     id: number
@@ -32,6 +38,26 @@ const Home = () => {
       titulo: 'Vantagem 3',
       descricao:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae error voluptates non, quo neque vel mollitia ducimus asperiores veritatis, impedit soluta. Beatae pariatur quis odit voluptatum, porro doloribus mollitia.'
+    }
+  ]
+
+  const fac = [
+    {
+      id: 1,
+      title: 'Seção 1',
+      content:
+        'Este é o conteúdo da Seção 1. Pode ser qualquer texto ou elemento React.'
+    },
+    {
+      id: 2,
+      title: 'Seção 2',
+      content: 'Este é o conteúdo da Seção 2. Adicione mais informações aqui.'
+    },
+    {
+      id: 3,
+      title: 'Seção 3',
+      content:
+        'Este é o conteúdo da Seção 3. Você pode personalizar como quiser!'
     }
   ]
   return (
@@ -125,6 +151,33 @@ const Home = () => {
         </div>
         <Slide></Slide>
       </section>
+      <section className={Style.fac}>
+        <div className="container">
+          <h2>FAC</h2>
+
+          <div className={Style.areaFac}>
+            {fac.map((item) => (
+              <div className={Style.details} key={item.id}>
+                <h3
+                  className={Style.summary}
+                  onClick={() => toggleCollapse(item.id)}
+                >
+                  <span>{item.title}</span>
+                  <span className={Style.icon}>
+                    {openItemId === item.id ? <BsDash /> : <BsPlus />}
+                  </span>
+                </h3>
+                <div
+                  className={`${Style.description} ${openItemId === item.id ? Style.open : ''}`}
+                >
+                  {item.content}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <Footer />
     </>
   )
 }

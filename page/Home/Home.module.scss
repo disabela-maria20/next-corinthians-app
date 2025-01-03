@@ -143,3 +143,67 @@
     padding: 90px 0;
   }
 }
+
+.fac {
+  color: $primary-dark-color;
+  background-image: url("/img/bg-yellow.png");
+  padding: 35px 0;
+  @include media(lg) {
+    padding: 90px 0;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    @include media(lg) {
+      font-size: 3.4rem;
+      line-height: 4.5rem;
+    }
+  }
+  .areaFac {
+    .details {
+      border-top: 2px solid $primary-dark-color;
+      // border-bottom: 1px solid $primary-dark-color;
+      &:last-child {
+        border-bottom: 2px solid $primary-dark-color;
+      }
+      padding: 20px 0;
+      .summary {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        @include media(lg) {
+          font-size: 2rem;
+          line-height: 2.9rem;
+        }
+        .icon{
+          font-size: 2.4rem;
+          padding: 0 5px;
+        }
+      }
+      .description {
+        overflow: hidden;
+        max-height: 0;
+        transform: translateY(1em);
+        transition: all 0.55s ease;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        @include media(lg) {
+          font-size: 1.8rem;
+          line-height: 2.9rem;
+        }
+        &.open {
+          display: block;
+          max-height: 10em;
+          transform: none;
+        }
+      }
+    }
+  }
+}

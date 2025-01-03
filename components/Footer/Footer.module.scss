@@ -1,0 +1,12 @@
+.footer{
+  padding: 35px 0;
+  @include media(lg){
+    padding: 90px 0;
+  }
+  .gridFooter{
+    max-width: 750px;
+    margin: 0 auto;
+    align-items: center;
+
+  }
+}
