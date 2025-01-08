@@ -28,13 +28,19 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
             <span>Menu</span>
           </li>
           <li>
-            <Link href={''}>como funciona?</Link>
+            <Link href={'#ComoFunciona'} scroll={true}>
+              como funciona?
+            </Link>
           </li>
           <li>
-            <Link href={''}>quais são as vantagens</Link>
+            <Link href={'#Vantagem'} scroll={true}>
+              quais são as vantagens
+            </Link>
           </li>
           <li>
-            <Link href={''}>FAC</Link>
+            <Link href={'#fac'} scroll={true}>
+              FAC
+            </Link>
           </li>
           <li>
             <Button link>quero me eternizar</Button>

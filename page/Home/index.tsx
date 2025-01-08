@@ -23,21 +23,18 @@ const Home = () => {
   }[] = [
     {
       id: 0,
-      titulo: 'Vantagem 1',
-      descricao:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae error voluptates non, quo neque vel mollitia ducimus asperiores veritatis, impedit soluta. Beatae pariatur quis odit voluptatum, porro doloribus mollitia.'
+      titulo: 'Pertencimento',
+      descricao: 'Faça parte para sempre da história do Corinthians.'
     },
     {
       id: 1,
-      titulo: 'Vantagem 2',
-      descricao:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae error voluptates non, quo neque vel mollitia ducimus asperiores veritatis, impedit soluta. Beatae pariatur quis odit voluptatum, porro doloribus mollitia.'
+      titulo: 'Homenagem',
+      descricao: 'Celebre a vida daqueles que amamos'
     },
     {
       id: 2,
-      titulo: 'Vantagem 3',
-      descricao:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae error voluptates non, quo neque vel mollitia ducimus asperiores veritatis, impedit soluta. Beatae pariatur quis odit voluptatum, porro doloribus mollitia.'
+      titulo: 'Conexão',
+      descricao: 'Eternize a história da sua família com o Corinthians.'
     }
   ]
 
@@ -94,46 +91,51 @@ const Home = () => {
             </div>
             <div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Quis ipsum
-                suspendisse ultrices gravida. Risus commodo viverra maecenas
-                accumsan lacus vel facilisis.
+                O Memorial Sempre Fiel é mais do que um simples memorial. É um
+                convite para você celebrar a vida e a história do Corinthians de
+                uma forma única. Nele, a paixão pelo futebol se encontra com a
+                homenagem aos nossos maiores ídolos. Imagine ter seu nome ao
+                lado dos maiores nomes da nossa história, em um espaço sagrado
+                dentro da Neo Química Arena. Junte-se a nós e faça parte dessa
+                jornada.
               </p>
             </div>
           </div>
-          <Title brasao>COMO FUNCIONA?</Title>
-          <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Quis ipsum
-                suspendisse ultrices gravida. Risus commodo viverra maecenas
-                accumsan lacus vel facilisis.
-              </p>
+          <section id="ComoFunciona">
+            <Title brasao>COMO FUNCIONA?</Title>
+            <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
+              <div>
+                <p>
+                  No Memorial Sempre Fiel, você pode adquirir um relicário
+                  personalizado para guardar as cinzas de seu ente querido no
+                  coração do Corinthians, a Neo Química Arena. Este relicário
+                  será cuidadosamente colocado na nossa Galeria dos Eternos, um
+                  espaço projetado para oferecer tranquilidade e reverência. Ao
+                  visitar a Arena, você e sua família poderão encontrar conforto
+                  e celebrar a memória de quem ama.
+                </p>
+                <p>
+                  Com a experiência e tradição da Bonavi, especialista em cuidar
+                  de momentos especiais, oferecemos um tributo eterno aos nossos
+                  torcedores mais apaixonados, garantindo respeito e cuidado em
+                  cada detalhe. Juntos, construímos um legado de amor e
+                  respeito, onde a paixão pelo futebol se encontra com a paz e o
+                  conforto daqueles que amamos.
+                </p>
+              </div>
+              <div>
+                <img src="/img/estadio.png" alt="" />
+              </div>
             </div>
-            <div>
-              <img src="/img/estadio.png" alt="" />
-            </div>
-          </div>
+          </section>
         </div>
       </main>
-      <section className={Style.card}>
+      <section className={Style.card} id="Vantagem">
         <div className="container">
           <Title as="h2">QUAIS SÃO AS VANTAGENS?</Title>
           <p className={Style.paragrafo}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            mattis enim sit amet turpis sagittis, a dictum sapien hendrerit. In
-            hac habitasse platea dictumst. Class aptent taciti sociosqu ad
-            litora torquent per conubia nostra, per inceptos himenaeos. Sed
-            egestas aliquet consequat.
+            Perder um ente querido é difícil, mas saber que ele está em um lugar
+            tão especial traz muita paz e conforto.
           </p>
 
           <div className="grid grid-3-md gap-10">
@@ -151,7 +153,7 @@ const Home = () => {
         </div>
         <Slide></Slide>
       </section>
-      <section className={Style.fac}>
+      <section className={Style.fac} id="fac">
         <div className="container">
           <h2>FAC</h2>
 

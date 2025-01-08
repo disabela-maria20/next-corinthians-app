@@ -50,7 +50,7 @@
   p {
     font-size: 1.6rem;
     line-height: 2.2rem;
-
+    margin-bottom: 25px;
     @include media(lg) {
       font-size: 1.8rem;
       line-height: 2.9rem;
@@ -67,7 +67,7 @@
     @include media(lg) {
       font-size: 1.8rem;
       line-height: 2.9rem;
-      padding: 45px;
+      padding-bottom: 45px;
     }
   }
 
