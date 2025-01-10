@@ -155,7 +155,7 @@ const Home = () => {
       </section>
       <section className={Style.fac} id="fac">
         <div className="container">
-          <h2>FAC</h2>
+          <h2>FAQ</h2>
 
           <div className={Style.areaFac}>
             {fac.map((item) => (
