@@ -31,44 +31,45 @@ const Slide: React.FC = () => {
   const item: SlideItem[] = [
     {
       id: 0,
-      src: '/img/foto.png',
+      src: '/img/galeria/foto1.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 1,
-      src: '/img/foto.png',
+      src: '/img/galeria/foto2.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 2,
-      src: '/img/foto.png',
+      src: '/img/galeria/foto3.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 3,
-      src: '/img/foto.png',
+      src: '/img/galeria/foto4.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 4,
-      src: '/img/foto.png',
+      src: '/img/galeria/foto5.jpg',
       alt: 'banner',
       tipo: 'foto'
-    }, {
+    }, 
+    {
       id: 5,
-      src: 'https://www.youtube.com/embed/_tBJTvbyihQ',
+      src: '/img/galeria/foto5.jpg',
       alt: 'banner',
-      tipo: 'video'
-    },
+      tipo: 'foto'
+    }, 
     {
       id: 6,
-      src: 'https://www.youtube.com/embed/_tBJTvbyihQ',
+      src: '/img/galeria/foto6.jpg',
       alt: 'banner',
-      tipo: 'video'
+      tipo: 'foto'
     },
     {
       id: 7,
@@ -76,18 +77,7 @@ const Slide: React.FC = () => {
       alt: 'banner',
       tipo: 'video'
     },
-    {
-      id: 8,
-      src: 'https://www.youtube.com/embed/_tBJTvbyihQ',
-      alt: 'banner',
-      tipo: 'video'
-    },
-    {
-      id: 9,
-      src: 'https://www.youtube.com/embed/_tBJTvbyihQ',
-      alt: 'banner',
-      tipo: 'video'
-    }
+  
   ]
   return (
     <>
@@ -101,6 +91,13 @@ const Slide: React.FC = () => {
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true,
+        }}
         loop={true}
         autoplay={{
           delay: 2500,
@@ -108,13 +105,6 @@ const Slide: React.FC = () => {
         }}
         navigation={true}
         slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true
-        }}
         breakpoints={{
           560: {
             slidesPerView: 1,
