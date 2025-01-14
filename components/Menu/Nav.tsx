@@ -38,8 +38,8 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
             </Link>
           </li>
           <li>
-            <Link href={'#fac'} scroll={true}>
-              FAC
+            <Link href={'#faq'} scroll={true}>
+              FAQ
             </Link>
           </li>
           <li>

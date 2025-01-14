@@ -153,7 +153,7 @@ const Home = () => {
         </div>
         <Slide></Slide>
       </section>
-      <section className={Style.fac} id="fac">
+      <section className={Style.fac} id="faq">
         <div className="container">
           <h2>FAQ</h2>
 
