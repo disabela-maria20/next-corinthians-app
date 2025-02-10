@@ -156,7 +156,11 @@
 .areaButton {
   display: flex;
   justify-content: center;
-  padding-top: 35px;
+  padding: 35px 0;
+
+  @include media(lg) {
+   padding: 0;
+  }
 
 }
 

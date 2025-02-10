@@ -143,10 +143,7 @@ const Slide: React.FC = () => {
             slidesPerView: 3,
             spaceBetween: 40
           },
-          1450: {
-            slidesPerView: 5,
-            spaceBetween: 50
-          }
+          
         }}
         pagination={false}
         modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
