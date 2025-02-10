@@ -31,53 +31,82 @@ const Slide: React.FC = () => {
   const item: SlideItem[] = [
     {
       id: 0,
-      src: '/img/galeria/foto1.jpg',
+      src: '/img/galeria/CTR_01.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 1,
-      src: '/img/galeria/foto2.jpg',
+      src: '/img/galeria/CTR_02.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 2,
-      src: '/img/galeria/foto3.jpg',
+      src: '/img/galeria/CTR_03.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 3,
-      src: '/img/galeria/foto4.jpg',
+      src: '/img/galeria/CTR_04.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 4,
-      src: '/img/galeria/foto5.jpg',
+      src: '/img/galeria/CTR_05.jpg',
       alt: 'banner',
       tipo: 'foto'
     }, 
     {
       id: 5,
-      src: '/img/galeria/foto5.jpg',
+      src: '/img/galeria/CTR_05.jpg',
       alt: 'banner',
       tipo: 'foto'
     }, 
     {
       id: 6,
-      src: '/img/galeria/foto6.jpg',
+      src: '/img/galeria/CTR_06.jpg',
+      alt: 'banner',
+      tipo: 'foto'
+    },{
+      id: 7,
+      src: '/img/galeria/CTR_07.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
-      id: 7,
-      src: 'https://www.youtube.com/embed/_tBJTvbyihQ',
+      id: 8,
+      src: '/img/galeria/CTR_08.jpg',
       alt: 'banner',
-      tipo: 'video'
+      tipo: 'foto'
     },
-  
+    {
+      id: 9,
+      src: '/img/galeria/CTR_09.jpg',
+      alt: 'banner',
+      tipo: 'foto'
+    },
+    {
+      id: 10,
+      src: '/img/galeria/CTR_10.jpg',
+      alt: 'banner',
+      tipo: 'foto'
+    },
+    {
+      id: 11,
+      src: '/img/galeria/CTR_11.jpg',
+      alt: 'banner',
+      tipo: 'foto'
+    }, 
+    {
+      id: 12,
+      src: '/img/galeria/CTR_12.jpg',
+      alt: 'banner',
+      tipo: 'foto'
+    }, 
+
   ]
   return (
     <>

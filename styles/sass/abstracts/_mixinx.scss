@@ -1,4 +1,5 @@
 @use "variables" as variable;
+
 $valor_gap: 2, 4, 8, 10, 16, 22, 24, 32, 46, 58, 64, 72, 92, 124;
 $grid-breakpoints: (
   sm: 576px,

@@ -21,12 +21,27 @@
 
 .banner {
   position: relative;
-  height: 250px;
+  height: 50vh;
 
-  img {
+  img:not( .logo img) {
     width: 100%;
+    
     height: 100%;
     object-fit: cover;
+
+  }
+  .logo{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    padding-top: 25px;
+    img{
+      width: 100%;
+      padding: 0 20px ;
+      max-width: 450px;
+    }
   }
 }
 
@@ -35,6 +50,9 @@
 
   .gridInfo {
     align-items: center;
+    @include media(xl) {
+      padding: 45px 0;
+    }
   }
 
   @include media(xl) {
@@ -50,7 +68,7 @@
   p {
     font-size: 1.6rem;
     line-height: 2.2rem;
-    margin-bottom: 25px;
+    margin: 25px 0;
     @include media(lg) {
       font-size: 1.8rem;
       line-height: 2.9rem;
@@ -104,24 +122,24 @@
       font-size: 1.4rem;
       line-height: 2.3rem;
       text-align: center;
-      color: $primary-dark-color;
+      color: var(--primary-dark-color);
     }
     .divisor {
       width: 100%;
       height: 2px;
-      background-color: $primary-lingh-color;
+      background-color: var(--primary-light-color);
     }
   }
 
   .item:hover {
-    color: $primary-dark-color;
+    color: var(--primary-dark-color);
     background-color: $primary-colors;
     background-image: none;
 
     .divisor {
       width: 100%;
       height: 2px;
-      background-color: $primary-dark-color;
+      background-color: var(--primary-dark-color);
     }
     p {
       max-height: 10em;
@@ -138,14 +156,12 @@
 .areaButton {
   display: flex;
   justify-content: center;
-  padding: 35px 0;
-  @include media(lg) {
-    padding: 90px 0;
-  }
+  padding-top: 35px;
+
 }
 
 .fac {
-  color: $primary-dark-color;
+  color: var(--primary-dark-color);
   background-image: url("/img/bg-yellow.png");
   padding: 35px 0;
   @include media(lg) {
@@ -166,10 +182,10 @@
   }
   .areaFac {
     .details {
-      border-top: 2px solid $primary-dark-color;
-      // border-bottom: 1px solid $primary-dark-color;
+      border-top: 2px solid var(--primary-dark-color);
+      // border-bottom: 1px solid var(--primary-dark-color);
       &:last-child {
-        border-bottom: 2px solid $primary-dark-color;
+        border-bottom: 2px solid var(--primary-dark-color);
       }
       padding: 20px 0;
       .summary {
@@ -207,3 +223,4 @@
     }
   }
 }
+

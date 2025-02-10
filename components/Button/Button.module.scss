@@ -13,11 +13,11 @@
 
     &.active{
         background-color: $primary-colors;
-        color: $primary-dark-color !important;
+        color: var(--primary-dark-color) !important;
     }
     &:hover{
         background-color: $primary-colors;
-        color: $primary-dark-color !important;
+        color: var(--primary-dark-color) !important;
     }
 
 }
