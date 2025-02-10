@@ -7,6 +7,7 @@ import { BsDash, BsPlus } from 'react-icons/bs'
 import Style from './Home.module.scss'
 
 import { Button, Footer, Menu, Range, Slide, Title } from '@/components'
+import useThema from '@/hook/useThema'
 
 const Home = () => {
   const [open, setOpen] = useState<boolean>(true)
@@ -57,9 +58,16 @@ const Home = () => {
         'Este é o conteúdo da Seção 3. Você pode personalizar como quiser!'
     }
   ]
+  const isDarkMode = useThema()
+
   return (
     <>
-      <header className={Style.header}>
+      <header
+        className={Style.header}
+        style={{
+          backgroundImage: `url(${isDarkMode ? '/img/bg-dark.png' : '/img/bg-claro.png'})`
+        }}
+      >
         <Menu.Body>
           <Menu.Nav open={open} setOpen={setOpen} />
           <Menu.Mobile>
@@ -73,11 +81,6 @@ const Home = () => {
             </Link>
           </Menu.Mobile>
         </Menu.Body>
-        <img
-          src="/img/logo-memoria-sempre-fiel.png"
-          alt="imagem de fundo"
-          className={Style.memorial}
-        />
       </header>
       <div className={Style.banner}>
         <img src="/img/foto.png" alt="banner" />
