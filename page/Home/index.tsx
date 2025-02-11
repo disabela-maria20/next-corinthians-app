@@ -42,20 +42,20 @@ const Home = () => {
   const fac = [
     {
       id: 1,
-      title: 'Como faço para colocar em ente querido que já esta sepultado',
+      title: 'Como faço para colocar em ente querido que já está sepultado',
       content:
         'As pessoas que foram sepultadas, podem depois de 03 anos serem exumadas. Neste caso o familiar deve solicitar no cemitério a exumação, solicitar uma ata de exumação, juntar uma certidão de óbito e entrar em contato conosco. Providenciaremos por nossa contra a cremação dos restos mortais e agendaremos a data para que as cinzas sejam colocadas no Memorial Sempre Fiel.'
     },
     {
       id: 2,
-      title: ' Quando será entregue para uso o Memorial Sempre Fiel ',
-      content: 'A previsão de entrega da obra é 22 de outubro próximo.'
+      title: 'Quando será entregue para uso o Memorial Sempre Fiel ',
+      content: 'A previsão de entrega da obra é 22 de outubro próximo'
     },
     {
       id: 3,
       title: 'Qual o valor do direito de uso do espaço.',
       content:
-        'O valor de direito de uso é inferior ao de muitos cemitérios e depederá do setor escolhido.'
+        'O valor de direito de uso é inferior ao de muitos cemitérios e dependerá do setor escolhido.'
     },
     {
       id: 4,
@@ -104,13 +104,13 @@ const Home = () => {
                 “É DEVER DA VIDA HERDADA HONRAR SEUS ANCESTRAIS”
               </Title>
               <p>
-                O MEMORIAL SEMPRE FILE é uma galeria de relicários, um local
+                O MEMORIAL SEMPRE FIEL é uma galeria de relicários, um local
                 único destinado a homenagear a história de vida, daqueles que se
                 adiantaram de nós, mas que continuam vivos em nossos
                 pensamentos, em nossos corações.
               </p>
               <p>
-                Localizada no coração da Arena do Corinthians, o Memorial Sempre
+                Localizada no coração da Arena do Corinthians o Memorial Sempre
                 Fiel irá guardar não apenas histórias, mas preservar
                 sentimentos. Em um espaço projetado para criar uma áurea de
                 sagrado, emoção, respeito e eternidade. Uma prova de amor
@@ -125,7 +125,7 @@ const Home = () => {
           <section id="ComoFunciona">
             <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
               <div>
-                <Title>COMO FUNCIONA?</Title>
+                <Title>COMO FUNCIONA:</Title>
                 <p>
                   Após realizar um cadastro (o número de pessoas que farão parte
                   desta biblioteca de histórias reais é limitado) o Curador do
@@ -133,7 +133,7 @@ const Home = () => {
                   relato, sendo ele aprovado e selecionado, você poderá realizar
                   uma homenagem única, adquirindo o direito de uso para guardar
                   em um relicário, dentro da arena Corinthians, as cinzas do seu
-                  ente querido
+                  ente querido.
                 </p>
               </div>
               <figure>
@@ -151,7 +151,7 @@ const Home = () => {
               <div>
                 <Title>O que é um Relicário.</Title>
                 <p>
-                  ARelicário é um artefato onde é guardado o bem mais valioso.
+                  Relicário é um artefato onde é guardado o bem mais valioso.
                   Hoje quando alguém se adianta de nós seu corpo é cremado ou
                   sepultado em um cemitério, onde também são colocadas suas
                   cinzas. Estamos criando uma nova opção. Um Memorial que é uma
@@ -159,7 +159,7 @@ const Home = () => {
                   dos entes queridos.
                 </p>
                 <p>
-                  Cada relicário terá uma identificação, um qrcod, que quando
+                  Cada relicário terá uma identificação, um QR Code, que quando
                   escaneado trará a história, imagens e até vídeos e áudios
                   (quando disponibilizados pela familia) daquela pessoa que ali
                   está sendo homenageada por alguém que amou.
