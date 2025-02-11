@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={Style.container}>
         <div className={`${Style.gridFooter} grid grid-3-md gap-32`}>
           <img
-            src={`${isDarkMode ? '/img/LOGO-horizontal-escuro.png' : '/img/LOGO-horizontal.png'}`}
+            src={`${isDarkMode ? '/img/LOGO-horizontal-escuro.webp' : '/img/LOGO-horizontal.webp'}`}
             alt="memorial"
           />
           <Button>Quero me Eternizar</Button>

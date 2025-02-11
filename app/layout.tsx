@@ -9,10 +9,39 @@ const raleway = Raleway({
 })
 
 export const metadata = {
+  type: 'website',
+  title: 'Memorial Sempre Fiel - Honre seus ancestrais na Arena do Corinthians',
+  description:
+    'Um espaço único na Arena do Corinthians para guardar histórias, cinzas e memórias de quem você ama. Eternize sua homenagem com relicários personalizados e tecnologia QRCode.',
+  images: [
+    {
+      url: '/img/memorial-sempre-fiel.webp',
+      width: 1200,
+      height: 630,
+      alt: 'Memorial Sempre Fiel - Honre seus ancestrais'
+    }
+  ],
+  url: '/memorial-sempre-fiel',
+  siteName: 'Memorial Sempre Fiel',
+  twitter: {
+    card: 'summary_large_image',
+    title:
+      'Memorial Sempre Fiel - Honre seus ancestrais na Arena do Corinthians',
+    description:
+      'Um espaço único na Arena do Corinthians para guardar histórias, cinzas e memórias de quem você ama. Eternize sua homenagem com relicários personalizados e tecnologia QRCode.',
+    images: ['/img/memorial-sempre-fiel.webp']
+  },
+
+  alternates: {
+    canonical: 'https://www.exemplo.com/'
+  },
+
   icons: {
     icon: '/favicon.ico'
   }
 }
+
+// Twitter Card
 
 export default function RootLayout({
   children

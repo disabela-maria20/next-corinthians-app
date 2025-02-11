@@ -1,5 +1,5 @@
 .header {
-  background-image: url("/img/bg-dark.png");
+  background-image: url("/img/bg-dark.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,7 +96,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("/img/icon-dark.png");
+    background-image: url("/img/icon-dark.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,7 +166,7 @@
 
 .fac {
   color: var(--primary-dark-color);
-  background-image: url("/img/bg-yellow.png");
+  background-image: url("/img/bg-yellow.webp");
   padding: 35px 0;
   @include media(lg) {
     padding: 90px 0;

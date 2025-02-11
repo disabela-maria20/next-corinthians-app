@@ -107,7 +107,7 @@
     z-index: 9;
 		padding: 20px;
 		svg{
-	
+			color: var(--primary-light-color);
 			font-size: 3.5rem;
 		}
 		@include media(xl) {

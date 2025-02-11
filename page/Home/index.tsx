@@ -74,7 +74,7 @@ const Home = () => {
       <header
         className={Style.header}
         style={{
-          backgroundImage: `url(${isDarkMode ? '/img/bg-dark.png' : '/img/bg-claro.png'})`
+          backgroundImage: `url(${isDarkMode ? '/img/bg-dark.webp' : '/img/bg-claro.webp'})`
         }}
       >
         <Menu.Body>
@@ -85,9 +85,9 @@ const Home = () => {
         </Menu.Body>
       </header>
       <div className={Style.banner}>
-        <img src="/img/memorial.png" alt="banner" />
+        <img src="/img/memorial.webp" alt="banner" />
         <div className={Style.logo}>
-          <img src="/img/LOGO.png" alt="logo" />
+          <img src="/img/LOGO.webp" alt="logo" />
         </div>
       </div>
       <Range />
@@ -95,7 +95,7 @@ const Home = () => {
         <div className="container">
           <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
             <figcaption>
-              <img src="/img/campo.jpg" alt="" />
+              <img src="/img/campo.webp" alt="" />
               <figcaption>Créditos: Marcelo Masili </figcaption>
             </figcaption>
             <div>
@@ -136,7 +136,7 @@ const Home = () => {
                 </p>
               </div>
               <figure>
-                <img src="/img/area-interna.png" alt="" />
+                <img src="/img/area-interna.webp" alt="" />
                 <figcaption>Créditos: Bruno Teixeira </figcaption>
               </figure>
             </div>
@@ -161,7 +161,7 @@ const Home = () => {
                 </p>
               </div>
               <figure>
-                <img src="/img/galeria/CTR_09.jpg" alt="" />
+                <img src="/img/galeria/CTR_09.webp" alt="" />
                 <figcaption>Créditos: Bruno Teixeira </figcaption>
               </figure>
             </div>
@@ -212,7 +212,7 @@ const Home = () => {
         className={Style.fac}
         id="faq"
         style={{
-          backgroundImage: `url(${isDarkMode ? '/img/bg-yellow.png' : '/img/pontilhado.jpg'})`
+          backgroundImage: `url(${isDarkMode ? '/img/bg-yellow.webp' : '/img/pontilhado.webp'})`
         }}
       >
         <div className="container">

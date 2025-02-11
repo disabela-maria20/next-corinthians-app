@@ -31,78 +31,78 @@ const Slide: React.FC = () => {
   const item: SlideItem[] = [
     {
       id: 0,
-      src: '/img/galeria/CTR_01.jpg',
+      src: '/img/galeria/CTR_01.webp',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 1,
-      src: '/img/galeria/CTR_02.jpg',
+      src: '/img/galeria/CTR_02.webp',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 2,
-      src: '/img/galeria/CTR_03.jpg',
+      src: '/img/galeria/CTR_03.webp',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 3,
-      src: '/img/galeria/CTR_04.jpg',
+      src: '/img/galeria/CTR_04.webp',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 4,
-      src: '/img/galeria/CTR_05.jpg',
+      src: '/img/galeria/CTR_05.webp',
       alt: 'banner',
       tipo: 'foto'
     }, 
     {
       id: 5,
-      src: '/img/galeria/CTR_05.jpg',
+      src: '/img/galeria/CTR_05.webp',
       alt: 'banner',
       tipo: 'foto'
     }, 
     {
       id: 6,
-      src: '/img/galeria/CTR_06.jpg',
+      src: '/img/galeria/CTR_06.webp',
       alt: 'banner',
       tipo: 'foto'
     },{
       id: 7,
-      src: '/img/galeria/CTR_07.jpg',
+      src: '/img/galeria/CTR_07.webp',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 8,
-      src: '/img/galeria/CTR_08.jpg',
+      src: '/img/galeria/CTR_08.webp',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 9,
-      src: '/img/galeria/CTR_09.jpg',
+      src: '/img/galeria/CTR_09.webp',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 10,
-      src: '/img/galeria/CTR_10.jpg',
+      src: '/img/galeria/CTR_10.webp',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 11,
-      src: '/img/galeria/CTR_11.jpg',
+      src: '/img/galeria/CTR_11.webp',
       alt: 'banner',
       tipo: 'foto'
     }, 
     {
       id: 12,
-      src: '/img/galeria/CTR_12.jpg',
+      src: '/img/galeria/CTR_12.webp',
       alt: 'banner',
       tipo: 'foto'
     },  {

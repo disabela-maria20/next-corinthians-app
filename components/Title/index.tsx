@@ -15,7 +15,7 @@ const Title: React.FC<ITitleProps> = ({
     <>
       {brasao && (
         <div className={Style.tag}>
-          <img src="/img/icon-yellow.png" alt="" />
+          <img src="/img/icon-yellow.webp" alt="" />
           <Tag className={Style.tagStyle}>{children}</Tag>
         </div>
       )}
