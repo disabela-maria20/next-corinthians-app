@@ -107,7 +107,7 @@
     z-index: 9;
 		padding: 20px;
 		svg{
-			color: rgb(255, 255, 255);
+	
 			font-size: 3.5rem;
 		}
 		@include media(xl) {
@@ -119,7 +119,7 @@
 		padding-inline-start: 0;
 		left: 0;
 		z-index: 999999;
-		background: rgba(0, 0, 0, 0.7);
+		background: var(--bg-menu);
 		padding: 20px;
 		backdrop-filter: blur(6px);
 		height: 100vh;
@@ -143,7 +143,7 @@
 
 			&.NomeMenu {
 				span {
-					color: #fff;
+					//color:var(--primary-dark-color);
 					font-size: 1.8rem;
 					font-weight: 700;
 					text-transform: uppercase;
@@ -218,7 +218,7 @@
 				text-transform: uppercase;
 				font-weight: 300;
 				font-size: 1.6rem;
-				color: #fff;
+				color:var(--primary-light-color);
 				transition: color 200ms ease;
 				border-radius: 50px;
 				transition: all 200ms ease;
@@ -227,10 +227,6 @@
 					padding: 10px 30px;	
 					font-size: 1.8rem;
 					
-				}
-
-				@include media(lg) {
-					color: #fff;
 				}
 			}
 		}

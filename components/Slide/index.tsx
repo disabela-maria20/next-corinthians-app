@@ -105,7 +105,12 @@ const Slide: React.FC = () => {
       src: '/img/galeria/CTR_12.jpg',
       alt: 'banner',
       tipo: 'foto'
-    }, 
+    },  {
+      id:13,
+      src: 'https://www.youtube.com/embed/_tBJTvbyihQ',
+      alt: 'banner',
+      tipo: 'video'
+    },
 
   ]
   return (

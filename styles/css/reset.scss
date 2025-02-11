@@ -1,11 +1,11 @@
 
 :root {
-  --primary-light-color: #000; /* Valor fixo */
-  --secondary-light-color: #242424; /* Valor fixo */
+  --primary-light-color: #000;
+  --secondary-light-color: #242424;
 
-  --primary-color-gray: #FFF; /* Valor fixo */
-  --primary-dark-color: #e6e6e6; /* Valor fixo */
-  
+  --primary-color-gray: #FFF;
+  --primary-dark-color: #e6e6e6;
+  --bg-menu: rgba(255, 255, 255, 0.7);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +15,7 @@
   
     --primary-color-gray: #242424;
     --primary-dark-color: #000;
+    --bg-menu: rgba(0, 0, 0, 0.7)
   }
 }
 
@@ -84,7 +85,9 @@ samp {
 small {
   font-size: 80%;
 }
-
+figcaption{
+  height: 100%;
+}
 sub,
 sup {
   font-size: 75%;
