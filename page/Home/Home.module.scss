@@ -49,7 +49,7 @@
 
   .gridInfo {
     align-items: center;
-    @include media(xl) {
+    @include media(md) {
       padding: 45px 0;
     }
   }
@@ -63,10 +63,13 @@
     width: 100%;
     height: 100%;
     img {
-      position: absolute;
+      position: relative;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      @include media (md){
+        position: absolute;
+      }
     }
 
     figcaption{
