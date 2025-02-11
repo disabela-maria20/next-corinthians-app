@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 import Style from './Footer.module.scss'
 
 import Button from '../Button'
@@ -9,7 +11,8 @@ const Footer = () => {
     <footer className={Style.footer}>
       <div className={Style.container}>
         <div className={`${Style.gridFooter} grid grid-3-md gap-32`}>
-          <img
+          <LazyLoadImage
+            effect="blur"
             src={`${isDarkMode ? '/img/LOGO-horizontal-escuro.webp' : '/img/LOGO-horizontal.webp'}`}
             alt="memorial"
           />

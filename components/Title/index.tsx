@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 import Style from './Title.module.scss'
 
 interface ITitleProps {
@@ -15,7 +17,7 @@ const Title: React.FC<ITitleProps> = ({
     <>
       {brasao && (
         <div className={Style.tag}>
-          <img src="/img/icon-yellow.webp" alt="" />
+          <LazyLoadImage effect="blur" src="/img/icon-yellow.webp" alt="" />
           <Tag className={Style.tagStyle}>{children}</Tag>
         </div>
       )}

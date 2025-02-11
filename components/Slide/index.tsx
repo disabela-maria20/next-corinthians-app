@@ -17,6 +17,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-coverflow'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 interface SlideItem {
   id: number;
@@ -159,7 +160,7 @@ const Slide: React.FC = () => {
         .map((item) => (
           <SwiperSlide key={item.id}>
             {item.tipo === "foto" ? (
-              <img src={item.src} alt={item.alt} />
+              <LazyLoadImage effect="blur" src={item.src} alt={item.alt} />
             ) : (
               <iframe width="424" height="238" src={item.src} 
               title="#sempontofinal" frameBorder="0"

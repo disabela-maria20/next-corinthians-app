@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { BsDash, BsPlus } from 'react-icons/bs'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import Style from './Home.module.scss'
 
@@ -85,7 +86,7 @@ const Home = () => {
         </Menu.Body>
       </header>
       <div className={Style.banner}>
-        <img src="/img/memorial.webp" alt="banner" />
+        <LazyLoadImage effect="blur" src="/img/memorial.webp" alt="banner" />
         <div className={Style.logo}>
           <img src="/img/LOGO.webp" alt="logo" />
         </div>
@@ -95,7 +96,7 @@ const Home = () => {
         <div className="container">
           <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
             <figcaption>
-              <img src="/img/campo.webp" alt="" />
+              <LazyLoadImage effect="blur" src="/img/campo.webp" alt="" />
               <figcaption>Créditos: Marcelo Masili </figcaption>
             </figcaption>
             <div>
@@ -136,7 +137,11 @@ const Home = () => {
                 </p>
               </div>
               <figure>
-                <img src="/img/area-interna.webp" alt="" />
+                <LazyLoadImage
+                  effect="blur"
+                  src="/img/area-interna.webp"
+                  alt=""
+                />
                 <figcaption>Créditos: Bruno Teixeira </figcaption>
               </figure>
             </div>
@@ -161,7 +166,11 @@ const Home = () => {
                 </p>
               </div>
               <figure>
-                <img src="/img/galeria/CTR_09.webp" alt="" />
+                <LazyLoadImage
+                  effect="blur"
+                  src="/img/galeria/CTR_09.webp"
+                  alt=""
+                />
                 <figcaption>Créditos: Bruno Teixeira </figcaption>
               </figure>
             </div>
