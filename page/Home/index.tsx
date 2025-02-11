@@ -95,10 +95,10 @@ const Home = () => {
       <main className={Style.mainInfo}>
         <div className="container">
           <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
-            <figcaption>
+            <figure>
               <LazyLoadImage effect="blur" src="/img/campo.webp" alt="" />
               <figcaption>Créditos: Marcelo Masili </figcaption>
-            </figcaption>
+            </figure>
             <div>
               <Title as="h2">
                 “É DEVER DA VIDA HERDADA HONRAR SEUS ANCESTRAIS”
