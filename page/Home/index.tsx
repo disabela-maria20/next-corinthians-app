@@ -44,7 +44,7 @@ const Home = () => {
       id: 1,
       title: 'Como faço para colocar em ente querido que já está sepultado',
       content:
-        'As pessoas que foram sepultadas, podem depois de 03 anos serem exumadas. Neste caso o familiar deve solicitar no cemitério a exumação, solicitar uma ata de exumação, juntar uma certidão de óbito e entrar em contato conosco. Providenciaremos por nossa contra a cremação dos restos mortais e agendaremos a data para que as cinzas sejam colocadas no Memorial Sempre Fiel.'
+        'As pessoas que foram sepultadas, podem depois de 03 anos serem exumadas. Neste caso o familiar deve solicitar no cemitério a exumação, solicitar uma ata de exumação, juntar uma certidão de óbito e entrar em contato conosco. Providenciaremos por nossa contra a cremação dos restos mortais e agendaremos a data para que as cinzas sejam colocadas no Memorial Eternamente Fiel.'
     },
     {
       id: 2,
@@ -92,26 +92,32 @@ const Home = () => {
         </div>
       </div>
       <Range />
+
       <main className={Style.mainInfo}>
         <div className="container">
+          <p className={Style.paragrafo}>
+            A exemplo do Esporte Clube Barcelona da Espanha, o Corinthians é o
+            primeiro time do Brasil que abre um espaço para homenagear os
+            torcedores que já se adiantaram de nós, reforçando assim a ideia de
+            respeito, pertencimento e união da família Corinthiana.
+          </p>
           <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
             <figure>
               <LazyLoadImage effect="blur" src="/img/campo.webp" alt="" />
               <figcaption>Créditos: Marcelo Masili </figcaption>
             </figure>
             <div>
-              <Title as="h2">
-                “É DEVER DA VIDA HERDADA HONRAR SEUS ANCESTRAIS”
-              </Title>
+              <Title as="h2">MEMORIAL ETERNAMENTE FIEL</Title>
+              <p>“É DEVER DA VIDA HERDADA HONRAR SEUS ANCESTRAIS”</p>
               <p>
-                O MEMORIAL SEMPRE FIEL é uma galeria de relicários, um local
-                único destinado a homenagear a história de vida, daqueles que se
-                adiantaram de nós, mas que continuam vivos em nossos
+                O MEMORIAL ETERNAMENTE FIEL é uma galeria de relicários, um
+                local único destinado a homenagear a história de vida, daqueles
+                que se adiantaram de nós, mas que continuam vivos em nossos
                 pensamentos, em nossos corações.
               </p>
               <p>
-                Localizada no coração da Arena do Corinthians o Memorial Sempre
-                Fiel irá guardar não apenas histórias, mas preservar
+                Localizada no coração da Arena do Corinthians o Memorial
+                Eternamente Fiel irá guardar não apenas histórias, mas preservar
                 sentimentos. Em um espaço projetado para criar uma áurea de
                 sagrado, emoção, respeito e eternidade. Uma prova de amor
                 eterno.
@@ -129,7 +135,7 @@ const Home = () => {
                 <p>
                   Após realizar um cadastro (o número de pessoas que farão parte
                   desta biblioteca de histórias reais é limitado) o Curador do
-                  Memorial Sempre Fiel, irá analisar e avaliar o pedido e o
+                  Memorial Eternamente Fiel, irá analisar e avaliar o pedido e o
                   relato, sendo ele aprovado e selecionado, você poderá realizar
                   uma homenagem única, adquirindo o direito de uso para guardar
                   em um relicário, dentro da arena Corinthians, as cinzas do seu

@@ -1,4 +1,5 @@
 import '@/styles/sass/globals.scss'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Raleway } from 'next/font/google'
 
 const raleway = Raleway({
@@ -51,6 +52,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={raleway.className}>{children}</body>
+      <GoogleAnalytics gaId="G-Z7S7LVX2P2" />
     </html>
   )
 }
