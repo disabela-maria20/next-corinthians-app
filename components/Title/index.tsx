@@ -11,14 +11,17 @@ interface ITitleProps {
 const Title: React.FC<ITitleProps> = ({
   as: Tag = 'h1',
   children,
-  brasao = false
+  brasao = false,
+  ...props
 }) => {
   return (
     <>
       {brasao && (
         <div className={Style.tag}>
           <LazyLoadImage effect="blur" src="/img/icon-yellow.webp" alt="" />
-          <Tag className={Style.tagStyle}>{children}</Tag>
+          <Tag {...props} className={Style.tagStyle}>
+            {children}
+          </Tag>
         </div>
       )}
       {!brasao && <Tag className={Style.tagStyle}>{children}</Tag>}

@@ -95,12 +95,14 @@ const Home = () => {
 
       <main className={Style.mainInfo}>
         <div className="container">
-          <p className={Style.paragrafo}>
-            A exemplo do Esporte Clube Barcelona da Espanha, o Corinthians é o
-            primeiro time do Brasil que abre um espaço para homenagear os
-            torcedores que já se adiantaram de nós, reforçando assim a ideia de
-            respeito, pertencimento e união da família Corinthiana.
-          </p>
+          <Title>
+            <span className={Style.paragrafo}>
+              A exemplo do Esporte Clube Barcelona da Espanha, o Corinthians é o
+              primeiro time do Brasil que abre um espaço para homenagear os
+              torcedores que já se adiantaram de nós, reforçando assim a ideia
+              de respeito, pertencimento e união da família Corinthiana.
+            </span>
+          </Title>
           <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
             <figure>
               <LazyLoadImage effect="blur" src="/img/campo.webp" alt="" />
