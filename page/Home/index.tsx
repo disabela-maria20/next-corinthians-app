@@ -88,7 +88,7 @@ const Home = () => {
       <div className={Style.banner}>
         <LazyLoadImage effect="blur" src="/img/memorial.webp" alt="banner" />
         <div className={Style.logo}>
-          <img src="/img/LOGO.webp" alt="logo" />
+          <img loading="eager" src="/img/LOGO.webp" alt="logo" />
         </div>
       </div>
       <Range />
@@ -105,7 +105,12 @@ const Home = () => {
           </Title>
           <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
             <figure>
-              <LazyLoadImage effect="blur" src="/img/campo.webp" alt="" />
+              <LazyLoadImage
+                effect="blur"
+                loading="eager"
+                src="/img/campo.webp"
+                alt=""
+              />
               <figcaption>Créditos: Marcelo Masili </figcaption>
             </figure>
             <div>
@@ -130,7 +135,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <section id="ComoFunciona">
+          <section id="ComoFunciona" tabIndex={-1}>
             <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
               <div>
                 <Title>COMO FUNCIONA:</Title>
@@ -147,6 +152,7 @@ const Home = () => {
               <figure>
                 <LazyLoadImage
                   effect="blur"
+                  loading="eager"
                   src="/img/area-interna.webp"
                   alt=""
                 />
@@ -154,7 +160,7 @@ const Home = () => {
               </figure>
             </div>
           </section>
-          <section id="Relicario">
+          <section id="Relicario" tabIndex={-1}>
             <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
               <div>
                 <Title>O que é um Relicário.</Title>
@@ -176,6 +182,7 @@ const Home = () => {
               <figure>
                 <LazyLoadImage
                   effect="blur"
+                  loading="eager"
                   src="/img/galeria/CTR_09.webp"
                   alt=""
                 />
@@ -183,7 +190,7 @@ const Home = () => {
               </figure>
             </div>
           </section>
-          <section id="Garantir">
+          <section id="Garantir" tabIndex={-1}>
             <div className={`${Style.gridInfo} grid grid-1-md gap-32`}>
               <div>
                 <Title>Segurança e visitação</Title>
@@ -202,7 +209,7 @@ const Home = () => {
           <Slide></Slide>
         </div>
       </main>
-      {/* <section className={Style.card} id="Vantagem">
+      {/* <section className={Style.card} id="Vantagem" tabIndex={-1}>
         <div className="container">
           <Title as="h2">QUAIS SÃO AS VANTAGENS?</Title>
           <p className={Style.paragrafo}>
@@ -228,6 +235,7 @@ const Home = () => {
       <section
         className={Style.fac}
         id="faq"
+        tabIndex={-1}
         style={{
           backgroundImage: `url(${isDarkMode ? '/img/bg-yellow.webp' : '/img/pontilhado.webp'})`
         }}
