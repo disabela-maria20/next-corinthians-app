@@ -13,18 +13,21 @@ const Button: React.FC<IButtonProps> = ({
   href,
   children,
   link = false,
-  bgColor = false
+  bgColor = false,
+  ...props
 }) => {
   const buttonClass = `${Style.btnStyle} ${bgColor ? Style.active : ''}`
 
   return (
     <>
       {link ? (
-        <Link href={href || '#'} className={buttonClass}>
+        <Link href={href || '#'} {...props} className={buttonClass}>
           {children}
         </Link>
       ) : (
-        <button className={buttonClass}>{children}</button>
+        <button {...props} className={buttonClass}>
+          {children}
+        </button>
       )}
     </>
   )
