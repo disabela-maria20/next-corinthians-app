@@ -89,21 +89,27 @@ const Home = () => {
         <LazyLoadImage effect="blur" src="/img/memorial.webp" alt="banner" />
         <div className={Style.logo}>
           <img loading="eager" src="/img/LOGO.webp" alt="logo" />
+          <h1>
+            Um lugar para eternizar <br />
+            as lembranças e o amor.
+          </h1>
         </div>
       </div>
       <Range />
 
       <main className={Style.mainInfo}>
         <div className="container">
-          <Title>
-            <span className={Style.paragrafo}>
-              A exemplo do Esporte Clube Barcelona da Espanha, o Corinthians é o
-              primeiro time do Brasil que abre um espaço para homenagear os
-              torcedores que já se adiantaram de nós, reforçando assim a ideia
-              de respeito, pertencimento e união da família Corinthiana.
-            </span>
-          </Title>
-          <div className={`${Style.gridInfo} grid grid-2-md gap-32`}>
+          <h2 className={Style.titulo}>
+            A exemplo de grandes times da Europa,
+            <strong>
+              &nbsp;o Corinthians é o <span>primeiro time do Brasil</span> que
+              abre um espaço para homenagear os torcedores que já se adiantaram
+              de nós,
+            </strong>
+            &nbsp;reforçando assim a ideia de respeito, pertencimento e união da
+            Família Corinthiana.
+          </h2>
+          <div className={`${Style.gridInfosobre} gap-32`}>
             <figure>
               <LazyLoadImage
                 effect="blur"
@@ -111,27 +117,28 @@ const Home = () => {
                 src="/img/campo.webp"
                 alt=""
               />
-              <figcaption>Créditos: Marcelo Masili </figcaption>
+              <figcaption>Créditos: Rodrigo Coca</figcaption>
             </figure>
             <div>
-              <Title as="h2">MEMORIAL ETERNAMENTE FIEL</Title>
-              <p>“É DEVER DA VIDA HERDADA HONRAR SEUS ANCESTRAIS”</p>
+              <Title as="h2">
+                “É DEVER DA VIDA HERDADA HONRAR SEUS ANCESTRAIS”
+              </Title>
               <p>
                 O MEMORIAL ETERNAMENTE FIEL é uma galeria de relicários, um
-                local único destinado a homenagear a história de vida, daqueles
+                local único destinado a homenagear a história de vida daqueles
                 que se adiantaram de nós, mas que continuam vivos em nossos
                 pensamentos, em nossos corações.
               </p>
               <p>
-                Localizada no coração da Arena do Corinthians o Memorial
-                Eternamente Fiel irá guardar não apenas histórias, mas preservar
-                sentimentos. Em um espaço projetado para criar uma áurea de
-                sagrado, emoção, respeito e eternidade. Uma prova de amor
-                eterno.
+                Localizada no coração da Neo Química Arena, o Memorial
+                Eternamente Fiel irá guardar não apenas histórias, mas também
+                preservar sentimentos. Em um espaço projetado para criar uma
+                áurea de sagrado, emoção, respeito e eternidade. Uma prova de
+                amor eterno.
               </p>
               <p>
-                Aqueles que se adiantaram de nós, se sentem vivos em nós quando
-                são lembrados e homenageados.
+                Aqueles que se adiantaram de nós estarão sempre vivos ao serem
+                lembrados e homenageados.
               </p>
             </div>
           </div>
@@ -140,13 +147,16 @@ const Home = () => {
               <div>
                 <Title>COMO FUNCIONA:</Title>
                 <p>
-                  Após realizar um cadastro (o número de pessoas que farão parte
-                  desta biblioteca de histórias reais é limitado) o Curador do
-                  Memorial Eternamente Fiel, irá analisar e avaliar o pedido e o
-                  relato, sendo ele aprovado e selecionado, você poderá realizar
-                  uma homenagem única, adquirindo o direito de uso para guardar
-                  em um relicário, dentro da arena Corinthians, as cinzas do seu
-                  ente querido.
+                  Após realizar um cadastro, (o número de pessoas que farão
+                  parte desta biblioteca de histórias reais é limitado) o
+                  Curador do Memorial Eternamente Fiel irá analisar e avaliar o
+                  pedido e o relato.
+                </p>
+                <p>
+                  Após a aprovação e seleção do seu pedido, você irá adquirir o
+                  direito de uso para guardar em um relicário uma homenagem
+                  única, dentro da Neo Química Arena, com as cinzas do seu ente
+                  querido.
                 </p>
               </div>
               <figure>
@@ -166,7 +176,7 @@ const Home = () => {
                 <Title>O que é um Relicário.</Title>
                 <p>
                   Relicário é um artefato onde é guardado o bem mais valioso.
-                  Hoje quando alguém se adianta de nós seu corpo é cremado ou
+                  Hoje, quando alguém se adianta de nós, seu corpo é cremado ou
                   sepultado em um cemitério, onde também são colocadas suas
                   cinzas. Estamos criando uma nova opção. Um Memorial que é uma
                   Galeria, onde poderão ser colocados relicários com as cinzas
@@ -175,8 +185,8 @@ const Home = () => {
                 <p>
                   Cada relicário terá uma identificação, um QR Code, que quando
                   escaneado trará a história, imagens e até vídeos e áudios
-                  (quando disponibilizados pela familia) daquela pessoa que ali
-                  está sendo homenageada por alguém que amou.
+                  (quando disponibilizados pela família) daquela pessoa que ali
+                  está sendo homenageada.
                 </p>
               </div>
               <figure>
@@ -195,13 +205,13 @@ const Home = () => {
               <div>
                 <Title>Segurança e visitação</Title>
                 <p>
-                  O local contará com um sistema avançado de segurança, a
-                  visitação será controlada e limitada para terceiros, mas
-                  liberada nos horários estabelecidos no regimento interno para
-                  familiares cadastrados.
+                  O local contará com um sistema avançado de segurança, com
+                  visitação controlada e limitada para terceiros, mas liberada
+                  nos horários estabelecidos no regimento interno para
+                  familiares cadastrados
                 </p>
                 <div className={Style.areaButton}>
-                  <Button link>Quero garantir o meu</Button>
+                  <Button link>SAIBA COMO GARANTIR O SEU</Button>
                 </div>
               </div>
             </div>

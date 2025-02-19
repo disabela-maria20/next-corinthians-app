@@ -11,7 +11,8 @@ const raleway = Raleway({
 
 export const metadata = {
   type: 'website',
-  title: 'Memorial Sempre Fiel - Honre seus ancestrais na Arena do Corinthians',
+  title:
+    'Memorial Eternamente Fiel - Honre seus ancestrais na Arena do Corinthians',
   description:
     'Um espaço único na Arena do Corinthians para guardar histórias, cinzas e memórias de quem você ama. Eternize sua homenagem com relicários personalizados e tecnologia QRCode.',
   images: [
@@ -19,7 +20,7 @@ export const metadata = {
       url: '/img/memorial-sempre-fiel.webp',
       width: 1200,
       height: 630,
-      alt: 'Memorial Sempre Fiel - Honre seus ancestrais'
+      alt: 'Memorial Eternamente Fiel - Honre seus ancestrais'
     }
   ],
   url: '/memorial-sempre-fiel',
@@ -27,7 +28,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title:
-      'Memorial Sempre Fiel - Honre seus ancestrais na Arena do Corinthians',
+      'Memorial Eternamente Fiel - Honre seus ancestrais na Arena do Corinthians',
     description:
       'Um espaço único na Arena do Corinthians para guardar histórias, cinzas e memórias de quem você ama. Eternize sua homenagem com relicários personalizados e tecnologia QRCode.',
     images: ['/img/memorial-sempre-fiel.webp']

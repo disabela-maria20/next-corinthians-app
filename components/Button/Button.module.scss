@@ -10,7 +10,7 @@
     border-radius: 3px !important ;
     cursor: pointer;
     transition: all 400ms ease-in;
-
+    text-transform: uppercase;
     &.active{
         background-color: $primary-colors;
         color: var(--primary-dark-color) !important;
