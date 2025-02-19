@@ -193,7 +193,7 @@ const Home = () => {
                 <LazyLoadImage
                   effect="blur"
                   loading="eager"
-                  src="/img/galeria/CTR_09.webp"
+                  src="/img/galeria/CTR_11.webp"
                   alt=""
                 />
                 <figcaption>Créditos: Bruno Teixeira </figcaption>

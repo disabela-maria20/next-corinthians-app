@@ -31,18 +31,6 @@ const Slide: React.FC = () => {
 
   const item: SlideItem[] = [
     {
-      id: 0,
-      src: '/img/galeria/CTR_01.webp',
-      alt: 'banner',
-      tipo: 'foto'
-    },
-    {
-      id: 1,
-      src: '/img/galeria/CTR_02.webp',
-      alt: 'banner',
-      tipo: 'foto'
-    },
-    {
       id: 2,
       src: '/img/galeria/CTR_03.webp',
       alt: 'banner',
@@ -66,29 +54,6 @@ const Slide: React.FC = () => {
       alt: 'banner',
       tipo: 'foto'
     }, 
-    {
-      id: 6,
-      src: '/img/galeria/CTR_06.webp',
-      alt: 'banner',
-      tipo: 'foto'
-    },{
-      id: 7,
-      src: '/img/galeria/CTR_07.webp',
-      alt: 'banner',
-      tipo: 'foto'
-    },
-    {
-      id: 8,
-      src: '/img/galeria/CTR_08.webp',
-      alt: 'banner',
-      tipo: 'foto'
-    },
-    {
-      id: 9,
-      src: '/img/galeria/CTR_09.webp',
-      alt: 'banner',
-      tipo: 'foto'
-    },
     {
       id: 10,
       src: '/img/galeria/CTR_10.webp',
