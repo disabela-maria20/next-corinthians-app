@@ -22,7 +22,9 @@
 :target {
   scroll-margin-top: .8em;
 }
-
+@view-transition {
+  navigation: auto;
+}
 * {
   margin: 0;
   padding: 0;
