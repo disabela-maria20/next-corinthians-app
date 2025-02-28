@@ -39,12 +39,20 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
             </Link>
           </li>
           <li>
-            <Link href={'#Vantagem'} scroll={true} onClick={closeMenu}>
-              quais são as vantagens
+            <Link
+              href={'#Relicario'}
+              scroll={true}
+              onClick={() => setOpen && setOpen(!false)}
+            >
+              O Relicário
             </Link>
           </li>
           <li>
-            <Link href={'#faq'} scroll={true} onClick={closeMenu}>
+            <Link
+              href={'#faq'}
+              scroll={true}
+              onClick={() => setOpen && setOpen(!false)}
+            >
               FAQ
             </Link>
           </li>
