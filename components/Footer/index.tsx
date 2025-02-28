@@ -10,14 +10,13 @@ const Footer = () => {
   return (
     <footer className={Style.footer}>
       <div className={Style.container}>
-        <div className={`${Style.gridFooter} grid grid-3-md gap-32`}>
+        <div className={`${Style.gridFooter} grid grid-2-md gap-32`}>
           <LazyLoadImage
             effect="blur"
             src={`${isDarkMode ? '/img/LOGO-horizontal-escuro.webp' : '/img/LOGO-horizontal.webp'}`}
             alt="memorial"
           />
-          <Button>Quero me Eternizar</Button>
-          <Button>Quero saber mais</Button>
+          <Button link>Quero me Eternizar</Button>
         </div>
       </div>
     </footer>

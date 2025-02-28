@@ -1,16 +1,12 @@
-import Link from 'next/link'
-
 import Style from './Button.module.scss'
 
 interface IButtonProps {
   children: React.ReactNode
   link?: boolean
-  href?: string
   bgColor?: boolean
 }
 
 const Button: React.FC<IButtonProps> = ({
-  href,
   children,
   link = false,
   bgColor = false,
@@ -21,9 +17,13 @@ const Button: React.FC<IButtonProps> = ({
   return (
     <>
       {link ? (
-        <Link href={href || '#'} {...props} className={buttonClass}>
+        <a
+          href="https://aztst-memorial-api-master.veloxtix.com/"
+          {...props}
+          className={buttonClass}
+        >
           {children}
-        </Link>
+        </a>
       ) : (
         <button {...props} className={buttonClass}>
           {children}

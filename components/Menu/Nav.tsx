@@ -59,11 +59,6 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
           <li>
             <Button link>quero me eternizar</Button>
           </li>
-          <li>
-            <Button link bgColor>
-              Quero saber mais
-            </Button>
-          </li>
         </ul>
       </div>
     </nav>
