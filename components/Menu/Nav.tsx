@@ -31,7 +31,7 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
           </li>
           <li>
             <Link
-              href={'#ComoFunciona'}
+              href={'/#ComoFunciona'}
               scroll={true}
               onClick={() => setOpen && setOpen(!false)}
             >
@@ -40,7 +40,7 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
           </li>
           <li>
             <Link
-              href={'#Relicario'}
+              href={'/#Relicario'}
               scroll={true}
               onClick={() => setOpen && setOpen(!false)}
             >
@@ -49,7 +49,7 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
           </li>
           <li>
             <Link
-              href={'#faq'}
+              href={'/#faq'}
               scroll={true}
               onClick={() => setOpen && setOpen(!false)}
             >

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useState } from 'react'
 import { BsDash, BsPlus } from 'react-icons/bs'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
@@ -272,6 +273,9 @@ const Home = () => {
                 </div>
               </div>
             ))}
+          </div>
+          <div className={Style.areaButton}>
+            <Link href={'faq'}>Saiba mais informações do FAQ </Link>
           </div>
         </div>
       </section>

@@ -197,12 +197,20 @@
   @include media(lg) {
    padding: 0;
   }
-
+  a{
+    padding:  10px 25px;
+    border: 2px solid var(--primary-dark-color);
+    color: var(--primary-dark-color);
+    font-size: 1.6rem;
+    margin-top: 35px;
+    font-weight: 700;
+  }
 }
 
 .fac {
   color: var(--primary-dark-color);
   background-image: url("/img/bg-yellow.webp");
+  background-size: cover;
   padding: 35px 0;
   @include media(lg) {
     padding: 90px 0;
