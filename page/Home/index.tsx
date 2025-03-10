@@ -7,7 +7,15 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import Style from './Home.module.scss'
 
-import { Button, Footer, Menu, Range, Slide, Title } from '@/components'
+import {
+  Button,
+  Contato,
+  Footer,
+  Menu,
+  Range,
+  Slide,
+  Title
+} from '@/components'
 import useThema from '@/hook/useThema'
 
 const Home = () => {
@@ -279,6 +287,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Contato />
       <Footer />
     </>
   )

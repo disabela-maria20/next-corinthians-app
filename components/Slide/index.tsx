@@ -1,7 +1,9 @@
+'use client'
 /* eslint-disable prettier/prettier */
 import { useState } from "react";
 import { BsFillPlayBtnFill } from "react-icons/bs";
 import { TbPhotoFilled } from "react-icons/tb";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import {
   Autoplay,
@@ -17,7 +19,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-coverflow'
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 interface SlideItem {
   id: number;

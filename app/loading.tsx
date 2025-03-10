@@ -1,3 +1,12 @@
 export default function pageLoading() {
-  return <div>Carregando....</div>
+  return (
+    <section className="loading">
+      <div className="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+  )
 }

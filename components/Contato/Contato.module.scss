@@ -1,0 +1,99 @@
+.formContato {
+  padding: 45px 0;
+  background-color: var(--primary-color-gray);
+  @include media(lg) {
+    padding: 90px 0;
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: 20px 0;
+    @include media(lg) {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+  }
+
+  .form {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .formArea{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .formGroup {
+        display: inline-flex;
+        width: 100%;
+        gap: 10px;
+        align-items: flex-start;
+        flex-direction: column;
+        @include media(lg) {
+          align-items: center;
+          flex-direction: row;
+        }
+        label {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          display: block;
+          font-weight: 700;
+          color: $primary-colors;
+          text-align: initial;
+  
+          @include media(lg) {
+            text-align: end;
+            width: 200px;
+          }
+        }
+        input,
+        textarea {
+          color: var(--primary-light-color);
+          width: 100%;
+          padding: 15px;
+          border-radius: 4px;
+          background: var(--primary-dark-color);
+          border: none;
+          font-size: 1.6rem;
+        }
+       
+      }
+      .error{
+        color: #b90303;
+        font-size: 1.4rem;
+        margin-top: 5px;
+      }
+    }
+    
+    .formbtn {
+      display: flex;
+      justify-content: end;
+
+      button {
+        background-color: $primary-colors;
+        border: 2px solid $primary-colors;
+        font-weight: 700 !important;
+        color: var(--primary-color-gray) !important;
+        padding: 10px 25px !important;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 3px !important ;
+        cursor: pointer;
+        transition: all 400ms ease-in;
+        text-transform: uppercase;
+        &:hover {
+          background-color: $primary-colors;
+          color: var(--primary-dark-color) !important;
+        }
+      }
+    }
+  }
+}
