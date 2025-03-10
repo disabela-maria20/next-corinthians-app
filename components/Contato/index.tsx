@@ -46,7 +46,7 @@ const Contato = () => {
   }
 
   return (
-    <section className={Style.formContato}>
+    <section id="contato" className={Style.formContato}>
       <div className="container">
         <Title as="h2">Fale Conosco</Title>
         <p>

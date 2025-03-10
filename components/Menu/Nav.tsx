@@ -57,6 +57,15 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
             </Link>
           </li>
           <li>
+            <Link
+              href={'#contato'}
+              scroll={true}
+              onClick={() => setOpen && setOpen(!false)}
+            >
+              Contato
+            </Link>
+          </li>
+          <li>
             <Button link>quero me eternizar</Button>
           </li>
         </ul>
