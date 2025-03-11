@@ -1,6 +1,10 @@
 
 .fac {
   color: var(--primary-dark-color);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("/img/bg-yellow.webp");
   padding: 35px 0;
   @include media(lg) {
