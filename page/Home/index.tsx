@@ -11,6 +11,7 @@ import {
   Button,
   Contato,
   Footer,
+  LiveChat,
   Menu,
   Range,
   Slide,
@@ -289,6 +290,7 @@ const Home = () => {
       </section>
       <Contato />
       <Footer />
+      <LiveChat />
     </>
   )
 }
