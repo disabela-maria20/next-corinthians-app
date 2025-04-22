@@ -96,7 +96,7 @@ const Home = () => {
         </Menu.Body>
       </header>
       <div className={Style.banner}>
-        <LazyLoadImage effect="blur" src="/img/memorial.webp" alt="banner" />
+        <LazyLoadImage effect="blur" src="/img/banner_topo.jpg" alt="banner" />
         <div className={Style.logo}>
           <img loading="eager" src="/img/LOGO.webp" alt="logo" />
           <h1>
@@ -124,7 +124,7 @@ const Home = () => {
               <LazyLoadImage
                 effect="blur"
                 loading="eager"
-                src="/img/campo.webp"
+                src="/img/texto1.jpg"
                 alt=""
               />
               <figcaption>Créditos: Rodrigo Coca</figcaption>
@@ -173,7 +173,7 @@ const Home = () => {
                 <LazyLoadImage
                   effect="blur"
                   loading="eager"
-                  src="/img/area-interna.webp"
+                  src="/img/texto2.jpg"
                   alt=""
                 />
                 <figcaption>Créditos: Bruno Teixeira </figcaption>
@@ -203,7 +203,7 @@ const Home = () => {
                 <LazyLoadImage
                   effect="blur"
                   loading="eager"
-                  src="/img/galeria/CTR_11.webp"
+                  src="/img/texto3.jpg"
                   alt=""
                 />
                 <figcaption>Créditos: Bruno Teixeira </figcaption>

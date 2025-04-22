@@ -33,47 +33,71 @@ const Slide: React.FC = () => {
 
   const item: SlideItem[] = [
     {
+      id: 1,
+      src: '/img/galeria/CINE_CORINTHIAS_01.jpg',
+      alt: 'banner',
+      tipo: 'foto'
+    },
+    {
       id: 2,
-      src: '/img/galeria/CTR_03.webp',
+      src: '/img/galeria/CINE_CORINTHIAS_02.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 3,
-      src: '/img/galeria/CTR_04.webp',
+      src: '/img/galeria/CINE_CORINTHIAS_03.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 4,
-      src: '/img/galeria/CTR_05.webp',
+      src: '/img/galeria/CINE_CORINTHIAS_04.jpg',
       alt: 'banner',
       tipo: 'foto'
     }, 
     {
       id: 5,
-      src: '/img/galeria/CTR_05.webp',
+      src: '/img/galeria/CINE_CORINTHIAS_05.jpg',
       alt: 'banner',
       tipo: 'foto'
     }, 
     {
+      id: 6,
+      src: '/img/galeria/CINE_CORINTHIAS_06.jpg',
+      alt: 'banner',
+      tipo: 'foto'
+    },
+    {
+      id: 7,
+      src: '/img/galeria/CINE_CORINTHIAS_07.jpg',
+      alt: 'banner',
+      tipo: 'foto'
+    }, 
+    {
+      id: 8,
+      src: '/img/galeria/CINE_CORINTHIAS_08.jpg',
+      alt: 'banner',
+      tipo: 'foto'
+    },
+    {
+      id: 9,
+      src: '/img/galeria/CINE_CORINTHIAS_09.jpg',
+      alt: 'banner',
+      tipo: 'foto'
+    },
+    {
       id: 10,
-      src: '/img/galeria/CTR_10.webp',
+      src: '/img/galeria/CINE_CORINTHIAS_10.jpg',
       alt: 'banner',
       tipo: 'foto'
     },
     {
       id: 11,
-      src: '/img/galeria/CTR_11.webp',
+      src: '/img/galeria/CINE_CORINTHIAS_11.jpg',
       alt: 'banner',
       tipo: 'foto'
-    }, 
-    {
-      id: 12,
-      src: '/img/galeria/CTR_12.webp',
-      alt: 'banner',
-      tipo: 'foto'
-    },  {
+    }, {
       id:13,
       src: 'https://www.youtube.com/embed/_tBJTvbyihQ',
       alt: 'banner',
