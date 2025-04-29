@@ -9,7 +9,6 @@ import Style from './Home.module.scss'
 
 import {
   Button,
-  Contato,
   Footer,
   LiveChat,
   Menu,
@@ -288,7 +287,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Contato />
+      {/* <Contato /> */}
       <Footer />
       <LiveChat />
     </>
