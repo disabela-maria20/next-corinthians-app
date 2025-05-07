@@ -16,7 +16,7 @@ import {
   Slide,
   Title
 } from '@/components'
-import useThema from '@/hook/useThema'
+//port useThema from '@/hook/useThema'
 
 const Home = () => {
   const [open, setOpen] = useState<boolean>(true)
@@ -25,7 +25,7 @@ const Home = () => {
   const toggleCollapse = (id: number) => {
     setOpenItemId((prevId) => (prevId === id ? null : id))
   }
-  const isDarkMode = useThema()
+  //const isDarkMode = useThema()
   // const vantagens: {
   //   id: number
   //   titulo: string
@@ -84,7 +84,7 @@ const Home = () => {
       <header
         className={Style.header}
         style={{
-          backgroundImage: `url(${isDarkMode ? '/img/bg-dark.webp' : '/img/bg-claro.webp'})`
+          backgroundImage: `url('/img/bg-claro.webp'})`
         }}
       >
         <Menu.Body>
@@ -126,7 +126,6 @@ const Home = () => {
                 src="/img/texto1.jpg"
                 alt=""
               />
-              <figcaption>Créditos: Rodrigo Coca</figcaption>
             </figure>
             <div>
               <Title as="h2">
@@ -175,7 +174,6 @@ const Home = () => {
                   src="/img/texto2.jpg"
                   alt=""
                 />
-                <figcaption>Créditos: Bruno Teixeira </figcaption>
               </figure>
             </div>
           </section>
@@ -205,7 +203,6 @@ const Home = () => {
                   src="/img/texto3.jpg"
                   alt=""
                 />
-                <figcaption>Créditos: Bruno Teixeira </figcaption>
               </figure>
             </div>
           </section>
@@ -256,7 +253,7 @@ const Home = () => {
         id="faq"
         tabIndex={-1}
         style={{
-          backgroundImage: `url(${isDarkMode ? '/img/bg-yellow.webp' : '/img/pontilhado.webp'})`
+          backgroundImage: `url( '/img/pontilhado.webp')`
         }}
       >
         <div className="container">

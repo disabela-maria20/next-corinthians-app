@@ -7,7 +7,7 @@ import Style from './Faq.module.scss'
 import faq from './faq.json'
 
 import { Menu, Footer } from '@/components'
-import useThema from '@/hook/useThema'
+//import useThema from '@/hook/useThema'
 
 type FAQItem = {
   REFERENCIA: string
@@ -23,7 +23,7 @@ const FAQ = () => {
   const [open, setOpen] = useState<boolean>(true)
   const [openItemId, setOpenItemId] = useState<string | null>(null)
 
-  const isDarkMode = useThema()
+  //const isDarkMode = useThema()
 
   const toggleCollapse = (id: string) => {
     setOpenItemId((prevId) => (prevId === id ? null : id))
@@ -45,7 +45,7 @@ const FAQ = () => {
         id="faq"
         tabIndex={-1}
         style={{
-          backgroundImage: `url(${isDarkMode ? '/img/bg-yellow.webp' : '/img/pontilhado.webp'})`
+          backgroundImage: `url('/img/pontilhado.webp')`
         }}
       >
         <div className="container">

@@ -4,16 +4,16 @@ import Style from './Footer.module.scss'
 
 import Button from '../Button'
 
-import useThema from '@/hook/useThema'
+//import useThema from '@/hook/useThema'
 const Footer = () => {
-  const isDarkMode = useThema()
+  //const isDarkMode = useThema(true)
   return (
     <footer className={Style.footer}>
       <div className={Style.container}>
         <div className={`${Style.gridFooter} grid grid-2-md gap-32`}>
           <LazyLoadImage
             effect="blur"
-            src={`${isDarkMode ? '/img/LOGO-horizontal-escuro.webp' : '/img/LOGO-horizontal.webp'}`}
+            src={'/img/LOGO-horizontal.webp'}
             alt="memorial"
           />
           <Button link>Quero me Eternizar</Button>

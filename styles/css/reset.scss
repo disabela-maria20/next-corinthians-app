@@ -9,13 +9,21 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --primary-light-color: #FFF;
-    --secondary-light-color: #e6e6e6;
+  // :root {
+  //   --primary-light-color: #FFF;
+  //   --secondary-light-color: #e6e6e6;
   
-    --primary-color-gray: #242424;
-    --primary-dark-color: #000;
-    --bg-menu: rgba(0, 0, 0, 0.7)
+  //   --primary-color-gray: #242424;
+  //   --primary-dark-color: #000;
+  //   --bg-menu: rgba(0, 0, 0, 0.7)
+  // }
+  :root {
+    --primary-light-color: #000;
+    --secondary-light-color: #242424;
+  
+    --primary-color-gray: #FFF;
+    --primary-dark-color: #e6e6e6;
+    --bg-menu: rgba(255, 255, 255, 0.7);
   }
 }
 
