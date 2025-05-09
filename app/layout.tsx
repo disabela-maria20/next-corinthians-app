@@ -17,13 +17,13 @@ export const metadata = {
     'Um espaço único na Arena do Corinthians para guardar histórias, cinzas e memórias de quem você ama. Eternize sua homenagem com relicários personalizados e tecnologia QRCode.',
   images: [
     {
-      url: '/img/memorial-sempre-fiel.webp',
+      url: 'https://memorialeternamentefiel.com.br/img/memorial-sempre-fiel.webp',
       width: 1200,
       height: 630,
       alt: 'Memorial Eternamente Fiel - Honre seus ancestrais'
     }
   ],
-  url: '/memorial-sempre-fiel',
+  url: 'https://memorialeternamentefiel.com.br/memorial-sempre-fiel',
   siteName: 'Memorial Sempre Fiel',
   twitter: {
     card: 'summary_large_image',
@@ -31,11 +31,13 @@ export const metadata = {
       'Memorial Eternamente Fiel - Honre seus ancestrais na Arena do Corinthians',
     description:
       'Um espaço único na Arena do Corinthians para guardar histórias, cinzas e memórias de quem você ama. Eternize sua homenagem com relicários personalizados e tecnologia QRCode.',
-    images: ['/img/memorial-sempre-fiel.webp']
+    images: [
+      'https://memorialeternamentefiel.com.br/img/memorial-sempre-fiel.webp'
+    ]
   },
 
   alternates: {
-    canonical: 'https://www.exemplo.com/'
+    canonical: 'https://memorialeternamentefiel.com.br/'
   },
 
   icons: {
