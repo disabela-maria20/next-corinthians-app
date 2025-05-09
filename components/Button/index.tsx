@@ -18,7 +18,7 @@ const Button: React.FC<IButtonProps> = ({
     <>
       {link ? (
         <a
-          href="https://aztst-memorial-api-master.veloxtix.com/"
+          href="https://www.memorialeternamentefiel.com"
           {...props}
           className={buttonClass}
         >
