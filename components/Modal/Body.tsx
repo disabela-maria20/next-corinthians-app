@@ -1,7 +1,45 @@
-import React from 'react'
+import { useEffect } from 'react'
+import { AiOutlineClose } from 'react-icons/ai'
 
-const Body = () => {
-  return <div>Body</div>
+import Style from './Modal.module.scss'
+
+interface IModelBodyProps {
+  children: React.ReactNode
+  setOpen(): void
+  className?: string
 }
 
-export default Body
+const ModelBody: React.FC<IModelBodyProps> = ({
+  children,
+  setOpen,
+  className
+}) => {
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setOpen()
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [setOpen])
+
+  return (
+    <div className={`${Style.modelBody} ${className}`}>
+      {children}
+      <button
+        className={Style.modelBodyIconClose}
+        onClick={setOpen}
+        aria-label="Fechar"
+      >
+        <AiOutlineClose />
+      </button>
+    </div>
+  )
+}
+
+export default ModelBody

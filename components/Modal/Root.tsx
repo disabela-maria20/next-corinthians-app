@@ -1,7 +1,11 @@
-import React from 'react'
+import Style from './Modal.module.scss'
 
-const Root = () => {
-  return <div>Root</div>
+interface IModelRoot {
+  children: React.ReactNode
 }
 
-export default Root
+const ModelRoot = ({ children }: IModelRoot) => {
+  return <section className={Style.modelRoot}>{children}</section>
+}
+
+export default ModelRoot

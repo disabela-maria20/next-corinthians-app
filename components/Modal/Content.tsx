@@ -1,7 +1,11 @@
-import React from 'react'
+import Style from './Modal.module.scss'
 
-const Content = () => {
-  return <div>Content</div>
+interface IModelContentProps {
+  children: React.ReactNode
 }
 
-export default Content
+const ModelContent = ({ children }: IModelContentProps) => {
+  return <div className={Style.modelContent}>{children}</div>
+}
+
+export default ModelContent

@@ -1,7 +1,10 @@
-import React from 'react'
+import Style from './Modal.module.scss'
 
-const Title = () => {
-  return <div>Title</div>
+interface IModelTitleProps {
+  children: React.ReactNode
+}
+const ModelTitle = ({ children }: IModelTitleProps) => {
+  return <h2 className={Style.modelTitle}>{children}</h2>
 }
 
-export default Title
+export default ModelTitle
