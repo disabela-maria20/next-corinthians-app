@@ -52,9 +52,9 @@ const Home = () => {
   const fac = [
     {
       id: 1,
-      title: 'Como faço para colocar em ente querido que já está sepultado',
+      title: 'Como faço para colocar emte querido que já está sepultado',
       content:
-        'As pessoas que foram sepultadas, podem depois de 03 anos serem exumadas. Neste caso o familiar deve solicitar no cemitério a exumação, solicitar uma ata de exumação, juntar uma certidão de óbito e entrar em contato conosco. Providenciaremos por nossa contra a cremação dos restos mortais e agendaremos a data para que as cinzas sejam colocadas no Memorial Eternamente Fiel.'
+        'As pessoas que foram sepultadas, podem depois de 03 anos serem exumadas. Neste caso o familiar deve solicitar no cemitério a exumação, solicitar uma ata de exumação, juntar uma certidão de óbito e entrar em contato conosco. Providenciaremos por nossa conta a cremação dos restos mortais e agendaremos a data para que as cinzas sejam colocadas no Memorial Eternamente Fiel.'
     },
     {
       id: 2,
@@ -120,14 +120,18 @@ const Home = () => {
             Família Corinthiana.
           </h2>
           <div className={`${Style.gridInfosobre} gap-32`}>
-            <figure>
-              <LazyLoadImage
-                effect="blur"
-                loading="eager"
-                src="/img/texto1.jpg"
-                alt=""
-              />
-            </figure>
+            <div className={Style.video}>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/GIF-aVj31E4?si=_Vi4Wlb5JBj3hGhy"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
             <div>
               <Title as="h2">
                 “É DEVER DA VIDA HERDADA HONRAR SEUS ANCESTRAIS”

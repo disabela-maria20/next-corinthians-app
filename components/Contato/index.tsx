@@ -13,7 +13,6 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import axios from 'axios'
 import { z } from 'zod'
 
-// Definindo o schema de validação com Zod
 const schema = z.object({
   nome: z
     .string()
@@ -22,8 +21,10 @@ const schema = z.object({
   email: z.string().email('E-mail inválido').min(1, 'O e-mail é obrigatório'),
   telefone: z
     .string()
-    .min(11, 'O telefone deve ter pelo menos 11 dígitos')
-    .regex(/^\d+$/, 'O telefone deve conter apenas números'),
+    .transform((val) => val.replace(/\D/g, ''))
+    .refine((val) => val.length === 11, {
+      message: 'O telefone deve conter exatamente 11 dígitos numéricos'
+    }),
   assunto: z
     .string()
     .min(5, 'O assunto deve ter pelo menos 5 caracteres')
@@ -31,7 +32,7 @@ const schema = z.object({
   mensagem: z
     .string()
     .min(10, 'A mensagem deve ter pelo menos 10 caracteres')
-    .max(500, 'A mensagem não pode ter mais de 500 caracteres')
+    .max(200, 'A mensagem não pode ter mais de 500 caracteres')
 })
 
 type FormData = z.infer<typeof schema>

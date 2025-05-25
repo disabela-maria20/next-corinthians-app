@@ -13,15 +13,13 @@ interface NavProps {
 }
 
 const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
-  const closeMenu = () => setOpen && setOpen(false)
-
   return (
     <nav className={`${Style.navBar}`}>
       <div className={`${Style.NavArea} ${!open ? Style.open : Style.close}`}>
         <button
           aria-label="Fechar"
           className={Style.navFechar}
-          onClick={closeMenu}
+          onClick={() => setOpen && setOpen(!false)}
         >
           <IoClose />
         </button>

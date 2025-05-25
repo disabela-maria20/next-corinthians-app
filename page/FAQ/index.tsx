@@ -6,7 +6,7 @@ import Style from './Faq.module.scss'
 
 import faq from './faq.json'
 
-import { Menu, Footer } from '@/components'
+import { Menu, Footer, Contato } from '@/components'
 //import useThema from '@/hook/useThema'
 
 type FAQItem = {
@@ -84,7 +84,7 @@ const FAQ = () => {
           ))}
         </div>
       </section>
-      {/* <Contato /> */}
+      <Contato />
       <Footer />
     </div>
   )

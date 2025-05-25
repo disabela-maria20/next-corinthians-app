@@ -67,7 +67,7 @@
     display: grid;
     
     @include media(md) {
-      grid-template-columns: 1.2fr 2fr;
+      grid-template-columns: 1fr 1.5fr;
     }
   }
 
@@ -287,3 +287,16 @@
     margin-bottom: 90px;
   }
 }
+
+ .video {
+    position: relative;
+    padding-bottom: 56.25%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
