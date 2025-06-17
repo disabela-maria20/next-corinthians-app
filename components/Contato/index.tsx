@@ -32,7 +32,7 @@ const schema = z.object({
   mensagem: z
     .string()
     .min(10, 'A mensagem deve ter pelo menos 10 caracteres')
-    .max(200, 'A mensagem não pode ter mais de 500 caracteres')
+    .max(500, 'A mensagem não pode ter mais de 500 caracteres')
 })
 
 type FormData = z.infer<typeof schema>

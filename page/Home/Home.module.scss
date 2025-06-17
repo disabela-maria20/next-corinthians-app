@@ -178,7 +178,7 @@
       background-color: var(--primary-dark-color);
     }
     p {
-      max-height: 10em;
+      max-height: 100%;
       transform: none;
       padding: 10px 0;
       @include media(lg) {
@@ -264,7 +264,7 @@
         }
         &.open {
           display: block;
-          max-height: 10em;
+          max-height: 100%;
           transform: none;
         }
       }
