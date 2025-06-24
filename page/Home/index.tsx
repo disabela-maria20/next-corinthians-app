@@ -52,7 +52,7 @@ const Home = () => {
   const fac = [
     {
       id: 1,
-      title: 'Como faço para colocar emte querido que já está sepultado',
+      title: 'Como faço para colocar ente querido que já está sepultado?',
       content:
         'As pessoas que foram sepultadas, podem depois de 03 anos serem exumadas. Neste caso o familiar deve solicitar no cemitério a exumação, solicitar uma ata de exumação, juntar uma certidão de óbito e entrar em contato conosco. Providenciaremos por nossa conta a cremação dos restos mortais e agendaremos a data para que as cinzas sejam colocadas no Memorial Eternamente Fiel.'
     },
@@ -103,6 +103,9 @@ const Home = () => {
             Um lugar para eternizar <br />
             as lembranças e o amor.
           </h1>
+          <Button link bgColor>
+            quero me eternizar
+          </Button>
         </div>
       </div>
       <Range />

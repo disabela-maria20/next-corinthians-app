@@ -50,6 +50,14 @@
       line-height: 4.2rem;
       margin-top: 10%;
       text-align: center;
+
+      @include media(lg){
+        margin-top: 2%;
+      }
+
+      @include media(xxl){
+        margin-top: 5%;
+      }
     }
   }
 }
