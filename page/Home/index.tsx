@@ -17,11 +17,14 @@ import {
   Slide,
   Title
 } from '@/components'
+import useIsMobile from '@/hook/useIsMobile'
 //port useThema from '@/hook/useThema'
 
 const Home = () => {
   const [open, setOpen] = useState<boolean>(true)
   const [openItemId, setOpenItemId] = useState<number | null>(null)
+
+  const { isMobile } = useIsMobile()
 
   const toggleCollapse = (id: number) => {
     setOpenItemId((prevId) => (prevId === id ? null : id))
@@ -103,9 +106,11 @@ const Home = () => {
             Um lugar para eternizar <br />
             as lembranças e o amor.
           </h1>
-          <Button link bgColor>
-            quero me eternizar
-          </Button>
+          {isMobile && (
+            <Button link bgColor>
+              quero me eternizar
+            </Button>
+          )}
         </div>
       </div>
       <Range />
